@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <div class="header">
+                <h1>🎓 Student Registration</h1>
+                <p>Apni details bhariye</p>
+            </div>
+            
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="name">📝 Naam</label>
+                    <input type="text" id="name" placeholder="Apna naam likhiye" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">📧 Email</label>
+                    <input type="email" id="email" placeholder="Email address" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">📱 Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Mobile number" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="course">📚 Course</label>
+                    <select id="course" required>
+                        <option value="">Course select kariye</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MBA">MBA</option>
+                        <option value="B.Com">B.Com</option>
+                        <option value="BA">BA</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="year">📅 Year</label>
+                    <select id="year" required>
+                        <option value="">Year select kariye</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Submit Registration</span>
+                    ✈️
+                </button>
+            </form>
+
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
